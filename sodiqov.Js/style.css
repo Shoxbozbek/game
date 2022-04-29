@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    background-image: url('images/stadium.jpg');
+    min-height: 100vh;
+}
+.full{
+    position: absolute;
+    width: 1900px;
+    height: 970px;
+}
+.player{
+    top: 400px;
+    right: 300px;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    background-position: center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-image: url('images/player2.png');
+}
+.ball{
+    top: 580px;
+    right: 450px;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-image: url('images/ball.png');
+}
+.gate{
+    top: 100px;
+    right: 500px;
+    height: 300px;
+    width: 800px;
+    border: 20px solid black;
+    position: absolute;
+    background-position: center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-image: url('images/gate.jpg');
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 800px;
+}
+.buttons button{
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    margin-left: 100px;
+}
+
+@media (max-width: 1500px){
+    .body{
+        position: relative;
+        max-height: 50vh;
+    }
+    .full{
+        width: 350px;
+        height: 500px;
+        position: relative;
+    }
+}
